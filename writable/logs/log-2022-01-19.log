@@ -1,0 +1,47 @@
+CRITICAL - 2022-01-19 13:52:24 --> Undefined property: App\Controllers\Usuarios::$produtoModel
+#0 C:\xampp\htdocs\ci4api\app\Controllers\Usuarios.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Usuarios->list()
+#2 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-19 14:49:59 --> Too few arguments to function App\Controllers\Usuarios::remove(), 0 passed in C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Usuarios->remove()
+#1 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-01-19 15:17:53 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-01-19 15:17:53 --> Unknown column 'id' in 'where clause'
+#0 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4api\app\Controllers\Usuarios.php(23): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Usuarios->show('1')
+#8 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-01-19 15:20:13 --> Call to undefined method App\Controllers\Usuarios::_validateToken()
+#0 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Usuarios->create()
+#1 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-01-19 15:32:41 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-01-19 15:32:41 --> Unknown column 'id' in 'where clause'
+#0 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `us...', 0)
+#1 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ci4api\app\Controllers\Usuarios.php(106): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Usuarios->delete('3')
+#8 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\xampp\htdocs\ci4api\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
